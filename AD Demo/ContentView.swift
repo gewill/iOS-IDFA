@@ -11,7 +11,7 @@ import SwiftUI
 
 struct ContentView: View {
     @State var statusString: String = ""
-    @State var idfa: String = ""
+    @State var idfa: String = ASIdentifierManager.shared().advertisingIdentifier.uuidString
     var body: some View {
         ScrollView {
             VStack {

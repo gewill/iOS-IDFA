@@ -31,10 +31,11 @@ struct ContentView: View {
                     }
                 } label: {
                     Text("获取追踪权限和IDFA")
-                        .padding(8)
+                        .padding(.horizontal, 16)
+                        .padding(.vertical, 8)
                         .background(
                             RoundedRectangle(cornerRadius: 8)
-                                .fill(Color.green)
+                                .fill(Color.gray.opacity(0.2))
                         )
                 }
 
@@ -51,10 +52,11 @@ struct ContentView: View {
                                 UIPasteboard.general.string = idfa
                             } label: {
                                 Text("复制")
-                                    .padding(8)
+                                    .padding(.horizontal, 16)
+                                    .padding(.vertical, 8)
                                     .background(
                                         RoundedRectangle(cornerRadius: 8)
-                                            .fill(Color.green)
+                                            .fill(Color.gray.opacity(0.2))
                                     )
                             }
                         }

@@ -31,8 +31,12 @@ struct ContentView: View {
                     }
                 } label: {
                     Text("获取追踪权限和IDFA")
+                        .padding(8)
+                        .background(
+                            RoundedRectangle(cornerRadius: 8)
+                                .fill(Color.green)
+                        )
                 }
-                .buttonStyle(.bordered)
 
                 Text("设置->隐私->追踪->当前App")
 
@@ -47,8 +51,12 @@ struct ContentView: View {
                                 UIPasteboard.general.string = idfa
                             } label: {
                                 Text("复制")
+                                    .padding(8)
+                                    .background(
+                                        RoundedRectangle(cornerRadius: 8)
+                                            .fill(Color.green)
+                                    )
                             }
-                            .buttonStyle(.bordered)
                         }
                     }
                 }

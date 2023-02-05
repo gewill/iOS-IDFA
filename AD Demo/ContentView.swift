@@ -59,6 +59,9 @@ struct ContentView: View {
                                             .fill(Color.gray.opacity(0.2))
                                     )
                             }
+                            if #available(iOS 16.0, *) {
+                                ShareLink(item: idfa)
+                            }
                         }
                     }
                 }
